@@ -1,0 +1,49 @@
+Bu klasörde aşağıdaki görsellerin bulunması gerekmektedir:
+
+GENEL GÖRSELLER:
+- glove-icon.png (Boks eldiveni ikonu - custom scrollbar için)
+- hero-bg.jpg (Ana sayfa hero arkaplan)
+
+EĞİTİM GÖRSELLERİ:
+- mma.jpg (MMA eğitimi görseli)
+- kickboks.jpg (Kickboks eğitimi görseli)
+- boks.jpg (Boks eğitimi görseli)
+- muaythai.jpg (Muay Thai eğitimi görseli)
+- tekvando.jpg (Tekvando eğitimi görseli)
+- bireysel.jpg (Bireysel eğitim görseli)
+
+HAKKIMIZDA GÖRSELLERİ:
+- about-story.jpg (Hikaye bölümü görseli)
+
+ŞUBE GÖRSELLERİ:
+- kadikoy-sube.jpg (Kadıköy şube ana görseli)
+- kadikoy-1.jpg, kadikoy-2.jpg, kadikoy-3.jpg (Kadıköy galeri)
+- besiktas-sube.jpg (Beşiktaş şube ana görseli)
+- besiktas-1.jpg, besiktas-2.jpg, besiktas-3.jpg (Beşiktaş galeri)
+
+ANTRENÖR GÖRSELLERİ:
+- trainer-burak.jpg (Burak Yılmaz)
+- trainer-mehmet.jpg (Mehmet Kaya)
+- trainer-ayse.jpg (Ayşe Demir)
+- trainer-ali.jpg (Ali Özkan)
+- trainer-zeynep.jpg (Zeynep Arslan)
+- trainer-emre.jpg (Emre Şahin)
+- trainer-fatma.jpg (Fatma Yıldız)
+- trainer-can.jpg (Can Yılmaz)
+
+BAŞARILAR GÖRSELLERİ:
+- champion-1.jpg, champion-2.jpg, champion-3.jpg, champion-4.jpg (Şampiyon görselleri)
+
+NOT: Demo için bu görselleri ücretsiz stok fotoğraf sitelerinden (Unsplash, Pexels) 
+veya AI görsel üreticilerinden (DALL-E, Midjourney) temin edebilirsiniz.
+
+Önerilen arama terimleri:
+- "boxing training"
+- "mma fighter"
+- "kickboxing"
+- "muay thai"
+- "taekwondo"
+- "boxing gym interior"
+- "personal trainer boxing"
+- "boxing coach"
+- "champion fighter"
