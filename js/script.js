@@ -37,30 +37,47 @@ document.querySelectorAll('.nav-menu a').forEach(link => {
 
 // Mobile dropdown toggle - handle arrow clicks and parent links
 document.querySelectorAll('.has-dropdown > a').forEach(link => {
-    link.addEventListener('click', (e) => {
-        if (window.innerWidth <= 768) {
-            e.preventDefault();
-            const parent = link.parentElement;
-            
-            // Close other dropdowns
-            document.querySelectorAll('.has-dropdown').forEach(item => {
-                if (item !== parent) {
-                    item.classList.remove('dropdown-active');
-                    const otherArrow = item.querySelector('.dropdown-icon');
-                    if (otherArrow) {
-                        otherArrow.style.transform = 'rotate(0deg)';
+    const arrow = link.querySelector('.dropdown-icon');
+    
+    // Arrow click handler
+    if (arrow) {
+        arrow.style.cursor = 'pointer';
+        arrow.addEventListener('click', (e) => {
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                e.stopPropagation();
+                
+                const parent = link.parentElement;
+                
+                // Close other dropdowns
+                document.querySelectorAll('.has-dropdown').forEach(item => {
+                    if (item !== parent) {
+                        item.classList.remove('dropdown-active');
+                        const otherArrow = item.querySelector('.dropdown-icon');
+                        if (otherArrow) {
+                            otherArrow.style.transform = 'rotate(0deg)';
+                        }
                     }
-                }
-            });
-            
-            // Toggle current dropdown
-            parent.classList.toggle('dropdown-active');
-            
-            // Rotate arrow icon
-            const arrow = link.querySelector('.dropdown-icon');
-            if (arrow) {
+                });
+                
+                // Toggle current dropdown
+                parent.classList.toggle('dropdown-active');
+                
+                // Rotate arrow icon
                 arrow.style.transform = parent.classList.contains('dropdown-active') ? 'rotate(180deg)' : 'rotate(0deg)';
             }
+        });
+    }
+    
+    // Link click handler - only prevent default if clicking on the link text, not the arrow
+    link.addEventListener('click', (e) => {
+        if (window.innerWidth <= 768) {
+            // Check if the click is on the arrow or its SVG path
+            if (e.target.closest('.dropdown-icon')) {
+                // Arrow was clicked, do nothing here (handled above)
+                e.preventDefault();
+            }
+            // Otherwise, let the link navigate normally
         }
     });
 });
