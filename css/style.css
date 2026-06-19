@@ -311,7 +311,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .why-choose {
-    background: var(--white);
+    background: var(--light-gray);
 }
 
 .features-grid {
@@ -365,7 +365,7 @@ body::-webkit-scrollbar-thumb {
 
 /* PROGRAMS */
 .programs {
-    background: var(--light-gray);
+    background: var(--white);
 }
 
 .programs-grid {
